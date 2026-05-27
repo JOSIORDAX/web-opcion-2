@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Prescripción Técnica | HVAC Industrial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-color: #2563eb; color: #2563eb; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <header class="bg-slate-900 text-white sticky top-0 z-50 border-b border-slate-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-black tracking-wider text-blue-500">THERMO<span class="text-white">CORE</span></span>
+                <span class="text-xs uppercase tracking-widest bg-slate-800 text-slate-400 px-2 py-1 rounded font-mono">B2B Portal</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#catalogo" class="hover:text-blue-400 transition-colors">CATÁLOGO TÉCNICO</a>
+                <a href="#selector" class="hover:text-blue-400 transition-colors">SELECTOR DE EQUIPOS</a>
+                <a href="#descargas" class="hover:text-blue-400 transition-colors">HUB DE DESCARGAS</a>
+                <a href="#soporte" class="hover:text-blue-400 transition-colors">SOPORTE POSTVENTA</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-blue-950 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight leading-none mb-6">
+                    Optimización Termodinámica y Sistemas de Alta Eficiencia Estacional
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 font-light leading-relaxed">
+                    Plataforma de prescripción técnica para ingenieros y prescriptores HVAC. Acceso inmediato a curvas de rendimiento, documentación homologada conforme a ErP Ecodesign y archivos de modelado BIM.
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs font-mono mb-8">
+                    <span class="bg-slate-800/80 px-3 py-2 rounded border border-slate-700 text-blue-400">✔ CUMPLIMIENTO RITE</span>
+                    <span class="bg-slate-800/80 px-3 py-2 rounded border border-slate-700 text-blue-400">✔ CERTIFICACIÓN EUROVENT</span>
+                    <span class="bg-slate-800/80 px-3 py-2 rounded border border-slate-700 text-blue-400">✔ REFRIGERANTES BAJO GWP</span>
+                </div>
+            </div>
+            <div id="selector" class="bg-slate-900/60 p-8 rounded-xl border border-slate-700/50 backdrop-blur shadow-2xl">
+                <h2 class="text-xl font-bold mb-4 text-blue-400 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 002-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    Centro de Cálculo y Selección Rápida
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 mb-1">POTENCIA TÉRMICA REQUERIDA (kW)</label>
+                        <input type="number" placeholder="Ej. 45" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 mb-1">CAUDAL DE AIRE NOMINAL (m³/h)</label>
+                        <input type="number" placeholder="Ej. 14500" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500 text-white">
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 px-4 rounded transition-colors tracking-wide">
+                        FILTRAR MODELOS COMPATIBLES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 mb-8 border-b pb-4">Categorías de Ingeniería de Producto</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:border-blue-500 transition-all group">
+                <div class="text-blue-600 mb-4 font-mono text-xs tracking-widest font-bold">01 / EXPANSION DIRECTA</div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Sistemas VRF y Splits</h3>
+                <p class="text-sm text-gray-500 mb-4">Unidades de caudal de refrigerante variable, diseño modular y alta presión estática disponible.</p>
+                <a href="#" class="text-sm font-medium text-blue-600 group-hover:underline flex items-center">Acceder a gama &rarr;</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:border-blue-500 transition-all group border-l-4 border-l-blue-600">
+                <div class="text-blue-600 mb-4 font-mono text-xs tracking-widest font-bold">02 / HIDRÓNICOS</div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Chillers y Bombas de Calor</h3>
+                <p class="text-sm text-gray-500 mb-4">Enfriadoras de agua, aerotermia industrial y unidades terminales tipo Fancoil.</p>
+                <a href="#producto" class="text-sm font-medium text-blue-600 group-hover:underline flex items-center">Ver Equipos Seleccionados &rarr;</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:border-blue-500 transition-all group">
+                <div class="text-blue-600 mb-4 font-mono text-xs tracking-widest font-bold">03 / TRATAMIENTO DE AIRE</div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">UTAs y Ventilación</h3>
+                <p class="text-sm text-gray-500 mb-4">Recuperadores de calor de alta eficiencia y unidades de tratamiento conforme a RITE.</p>
+                <a href="#" class="text-sm font-medium text-blue-600 group-hover:underline flex items-center">Acceder a gama &rarr;</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:border-blue-500 transition-all group">
+                <div class="text-blue-600 mb-4 font-mono text-xs tracking-widest font-bold">04 / AUTOMATIZACIÓN</div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Sistemas de Control BMS</h3>
+                <p class="text-sm text-gray-500 mb-4">Pasarelas de integración de protocolos y arquitecturas de red BACnet / Modbus.</p>
+                <a href="#" class="text-sm font-medium text-blue-600 group-hover:underline flex items-center">Acceder a gama &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <main id="producto" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-20">
+        <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+            
+            <div class="p-8 bg-slate-50 border-b border-gray-200">
+                <span class="text-xs font-bold font-mono tracking-widest uppercase bg-blue-100 text-blue-800 px-2.5 py-1 rounded">Sistemas Hidrónicos</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Bomba de Calor Aerotérmica Multitubo Inverter</h2>
+                <p class="text-sm font-mono text-gray-500 mt-1">Nomenclatura Técnica de Ingeniería: Serie NX-H / Código de Diseño: NX-H-045-INV</p>
+            </div>
+
+            <div class="border-b border-gray-200 bg-white">
+                <nav class="flex space-x-8 px-8" aria-label="Tabs">
+                    <button onclick="switchTab(event, 'especificaciones')" class="tab-btn active border-b-2 py-4 px-1 text-sm font-medium transition-all">
+                        Especificaciones Mecánicas y Eléctricas
+                    </button>
+                    <button onclick="switchTab(event, 'descargas-tab')" class="tab-btn border-b-2 border-transparent py-4 px-1 text-sm font-medium text-gray-500 hover:text-slate-700 hover:border-gray-300 transition-all">
+                        Zona de Descarga Técnica
+                    </button>
+                    <button onclick="switchTab(event, 'limites')" class="tab-btn border-b-2 border-transparent py-4 px-1 text-sm font-medium text-gray-500 hover:text-slate-700 hover:border-gray-300 transition-all">
+                        Límites de Funcionamiento
+                    </button>
+                </nav>
+            </div>
+
+            <div class="p-8">
+                
+                <div id="especificaciones" class="tab-content active space-y-8">
+                    <div>
+                        <h4 class="text-sm font-mono tracking-wider text-slate-400 uppercase mb-3">Descripción Termodinámica</h4>
+                        <p class="text-slate-700 leading-relaxed text-sm max-w-4xl">
+                            Unidad motocondensadora para producción simultánea o independiente de agua caliente y fría. Incorpora <strong>compresores Scroll</strong> con <strong>modulación Inverter</strong> y ventiladores axiales con electrónica EC para optimizar la <strong>presión estática disponible (Pa)</strong> en conductos de descarga.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-mono tracking-wider text-slate-400 uppercase mb-3">Matriz de Parámetros de Diseño Técnico (Condiciones Nominales)</h4>
+                        <div class="overflow-x-auto border border-gray-200 rounded-lg shadow-sm">
+                            <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+                                <thead class="bg-slate-50 font-mono text-xs text-slate-500 uppercase tracking-wider">
+                                    <tr>
+                                        <th class="px-6 py-3">Parámetro Operativo / Eléctrico</th>
+                                        <th class="px-6 py-3">Unidad / Valor de Diseño</th>
+                                        <th class="px-6 py-3">Condición / Norma de Ensayo</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 text-slate-700">
+                                    <tr>
+                                        <td class="px-6 py-3.5 font-semibold">Potencia Térmica (Calefacción)</td>
+                                        <td class="px-6 py-3.5 font-mono">45.0 kW</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Temp. Agua: 30°C/35°C - Temp. Ext: 7°C BH</td>
+                                    </tr>
+                                    <tr class="bg-slate-50/50">
+                                        <td class="px-6 py-3.5 font-semibold">Potencia Frigorífica (Refrigeración)</td>
+                                        <td class="px-6 py-3.5 font-mono">42.5 kW</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Temp. Agua: 12°C/7°C - Temp. Ext: 35°C BS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-3.5 font-semibold">Eficiencia Estacional (SCOP)</td>
+                                        <td class="px-6 py-3.5 font-mono text-green-600 font-bold">4.12</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Conforme a EN 14825 / ErP 2021 (Clima Medio)</td>
+                                    </tr>
+                                    <tr class="bg-slate-50/50">
+                                        <td class="px-6 py-3.5 font-semibold">Eficiencia Estacional (SEER)</td>
+                                        <td class="px-6 py-3.5 font-mono text-green-600 font-bold">5.28</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Conforme a EN 14825 / ErP 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-3.5 font-semibold">Caudal de Aire Nominal</td>
+                                        <td class="px-6 py-3.5 font-mono">14,500 m³/h</td>
+                                        <td class="px-6 py-3.5 text-gray-500">A velocidad máxima de ventilador</td>
+                                    </tr>
+                                    <tr class="bg-slate-50/50">
+                                        <td class="px-6 py-3.5 font-semibold">Presión Estática Disponible</td>
+                                        <td class="px-6 py-3.5 font-mono">60 Pa</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Configuración estándar de fábrica</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-3.5 font-semibold">Pérdida de Carga Hidráulica</td>
+                                        <td class="px-6 py-3.5 font-mono">24.5 kPa</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Intercambiador de placas soldadas</td>
+                                    </tr>
+                                    <tr class="bg-slate-50/50">
+                                        <td class="px-6 py-3.5 font-semibold">Tensión de Alimentación</td>
+                                        <td class="px-6 py-3.5 font-mono">400V / 3F / 50Hz</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Tolerancia admisible: ± 10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-3.5 font-semibold">Corriente Máxima de Diseño (FLA)</td>
+                                        <td class="px-6 py-3.5 font-mono">32.5 A</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Condiciones críticas de funcionamiento</td>
+                                    </tr>
+                                    <tr class="bg-slate-50/50">
+                                        <td class="px-6 py-3.5 font-semibold">Presión Sonora a 10 metros</td>
+                                        <td class="px-6 py-3.5 font-mono">48 dB(A)</td>
+                                        <td class="px-6 py-3.5 text-gray-500">Campo libre, directividad Q=2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-mono tracking-wider text-slate-400 uppercase mb-3">Ventajas de Ingeniería del Sistema</h4>
+                        <ul class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
+                            <li class="p-4 bg-slate-50 border border-slate-100 rounded">
+                                <strong class="block text-slate-900 mb-1">Modulación Inverter Avanzada:</strong> Ajuste continuo de la capacidad térmica adaptándose a la carga parcial del edificio. Reduce la corriente de arranque (LRA).
+                            </li>
+                            <li class="p-4 bg-slate-50 border border-slate-100 rounded">
+                                <strong class="block text-slate-900 mb-1">Compatibilidad BACnet/Modbus:</strong> Integración nativa en sistemas de gestión centralizada (BMS) mediante tarjeta de comunicación RS-485 serializada de fábrica.
+                            </li>
+                            <li class="p-4 bg-slate-50 border border-slate-100 rounded">
+                                <strong class="block text-slate-900 mb-1">Configuración Twin Rotary / Scroll:</strong> Bloque de compresión montado en tándem para optimizar el escalonamiento de circuitos frigoríficos y asegurar redundancia operativa.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="descargas-tab" class="tab-content space-y-6">
+                    <div>
+                        <p class="text-xs text-amber-600 bg-amber-50 border border-amber-200 px-4 py-2 rounded font-mono inline-block mb-4">
+                            ⚠️ DOCUMENTACIÓN TÉCNICA ABIERTA: No requiere registro previo para ingenieros prescriptores o instaladores autorizados.
+                        </p>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-red-100 text-red-700 px-2 py-1 rounded">PDF</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Ficha Técnica de Producto</span>
+                                        <span class="text-xs text-gray-400 font-mono">Curvas de corrección y corrección por glicol</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-red-100 text-red-700 px-2 py-1 rounded">PDF</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Manual de Instalación y Uso</span>
+                                        <span class="text-xs text-gray-400 font-mono">Torques de apriete y circuitos hidráulicos</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-red-100 text-red-700 px-2 py-1 rounded">PDF</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Esquema Eléctrico de Maniobra</span>
+                                        <span class="text-xs text-gray-400 font-mono">Borneros y conexionado de control analógico</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-teal-100 text-teal-700 px-2 py-1 rounded">RFA</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Modelo Paramétrico BIM (Revit)</span>
+                                        <span class="text-xs text-gray-400 font-mono">LOD 350 con puntos de conexión activos</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-blue-100 text-blue-700 px-2 py-1 rounded">DWG</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Planos CAD 2D / 3D</span>
+                                        <span class="text-xs text-gray-400 font-mono">Vistas en alzado y dimensiones de servicio</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-slate-50">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-xs font-black font-mono bg-green-100 text-green-700 px-2 py-1 rounded">CERT</span>
+                                    <div>
+                                        <span class="block text-sm font-semibold text-slate-800">Certificación Oficial Eurovent</span>
+                                        <span class="text-xs text-gray-400 font-mono">Acreditación de rendimientos térmicos</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm font-bold hover:underline">Descargar</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="limites" class="tab-content space-y-6">
+                    <div>
+                        <h4 class="text-sm font-mono tracking-wider text-slate-400 uppercase mb-4">Límites Térmicos Operativos del Ciclo Frigorífico</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-blue-50/50 border border-blue-100 rounded-lg">
+                                <span class="text-xs font-bold font-mono text-blue-700 uppercase tracking-widest block mb-2">Modo Refrigeración</span>
+                                <div class="space-y-1 font-mono text-sm text-slate-700">
+                                    <p>• Temp. Exterior Máxima: <span class="font-bold text-slate-900">46°C BS</span> (Bulbo Seco)</p>
+                                    <p>• Temp. Exterior Mínima: <span class="font-bold text-slate-900">-10°C BS</span></p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-orange-50/50 border border-orange-100 rounded-lg">
+                                <span class="text-xs font-bold font-mono text-orange-700 uppercase tracking-widest block mb-2">Modo Calefacción</span>
+                                <div class="space-y-1 font-mono text-sm text-slate-700">
+                                    <p>• Temp. Exterior Máxima: <span class="font-bold text-slate-900">24°C BS</span></p>
+                                    <p>• Temp. Exterior Mínima: <span class="font-bold text-slate-900">-15°C BH</span> (Bulbo Húmedo)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 p-4 bg-slate-100 rounded border border-slate-200 text-xs text-slate-600 leading-relaxed">
+                            <strong class="text-slate-900">Nota de Ingeniería obligatoria para Instaladores:</strong> Para consignas de salida de agua inferiores a 5°C en régimen de refrigeración, es estrictamente mandatorio el cálculo y dosificación de inhibidores de corrosión y anticongelante (Monoetilenglicol) en los circuitos hidráulicos según las tablas técnicas de pérdida de carga adjuntas en el manual mecánico.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function switchTab(event, tabId) {
+            // Ocultar todos los contenidos de pestañas
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Quitar la clase activa de todos los botones
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Mostrar la pestaña actual y activar el botón
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
